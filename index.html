@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Бесплатные проекты для изучения Python: офлайн-курс на 30 дней и тренажёр из 100 мини-программ для переписывания кода руками.">
+<link rel="canonical" href="https://pallach8698.github.io/">
+<title>Python-проекты: курс «30 дней» и тренажёр «100 программ»</title>
+<style>
+:root{
+  --bg: oklch(0.18 0.008 260);
+  --bg-soft: oklch(0.215 0.008 260);
+  --panel: oklch(0.245 0.008 260);
+  --panel-hover: oklch(0.275 0.008 260);
+  --text: oklch(0.96 0.006 95);
+  --muted: oklch(0.76 0.012 260);
+  --faint: oklch(0.64 0.012 260);
+  --line: oklch(0.36 0.01 260);
+  --accent: oklch(0.82 0.16 88);
+  --accent-hover: oklch(0.76 0.16 82);
+  --accent-text: oklch(0.25 0.04 75);
+  --radius: 16px;
+  --font: "Segoe UI", "Noto Sans", Arial, sans-serif;
+  --mono: Consolas, "Courier New", monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100dvh;background:var(--bg);color:var(--text);font:16px/1.65 var(--font);-webkit-font-smoothing:antialiased;display:grid;place-items:center;padding:40px 20px}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-radius:6px}
+main{width:min(860px,100%)}
+.brand{display:flex;align-items:center;gap:12px;font-weight:750;letter-spacing:-.02em;margin-bottom:14px}
+.brand-mark{display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--accent);border-radius:10px;color:var(--accent);font:700 18px/1 var(--mono)}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.12;letter-spacing:-.035em;margin-bottom:12px}
+.lead{color:var(--muted);max-width:60ch;margin-bottom:36px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{display:block;padding:26px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);transition:background .18s ease,border-color .18s ease,transform .18s ease}
+.card:hover{background:var(--panel-hover);border-color:var(--faint);transform:translateY(-2px)}
+.card .tagline{color:var(--accent);font-size:13px;font-weight:750;letter-spacing:.08em;text-transform:uppercase}
+.card h2{font-size:22px;margin:10px 0 8px;letter-spacing:-.02em}
+.card p{color:var(--muted);font-size:15px}
+.card .go{display:inline-block;margin-top:16px;color:var(--accent);font-weight:700}
+footer{margin-top:36px;color:var(--faint);font-size:14px}
+footer a{color:var(--muted)}
+footer a:hover{color:var(--text)}
+@media (max-width:640px){.cards{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><span class="brand-mark" aria-hidden="true">Py</span><span>pallach8698 · проекты для изучения Python</span></div>
+  <h1>Учись программировать на практике</h1>
+  <p class="lead">Два бесплатных проекта без регистрации и рекламы: сначала разомнись на тренажёре, потом пройди полный курс с автопроверкой.</p>
+  <div class="cards">
+    <a class="card" href="https://pallach8698.github.io/python100/">
+      <span class="tagline">Тренажёр</span>
+      <h2>100 программ Python</h2>
+      <p>Перепечатывай код руками и запускай: игры, приложения, консольные анимации и алгоритмы. Каждая программа — один маленький файл.</p>
+      <span class="go">Открыть →</span>
+    </a>
+    <a class="card" href="https://pallach8698.github.io/python30-site/">
+      <span class="tagline">Курс</span>
+      <h2>Python для дундриков</h2>
+      <p>Офлайн-курс на 30 дней для Windows и Android: 50 задач с автопроверкой, встроенный редактор, прогресс на твоём устройстве.</p>
+      <span class="go">Открыть →</span>
+    </a>
+  </div>
+  <footer>Код открыт: <a href="https://github.com/pallach8698/python100">github.com/pallach8698</a></footer>
+</main>
+</body>
+</html>
